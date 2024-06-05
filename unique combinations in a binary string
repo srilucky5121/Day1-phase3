@@ -1,0 +1,27 @@
+#unique combinations in a binary string
+def printBinaryNumbers(size, result, n):
+    if size == n:
+        print(result)
+        return
+    printBinaryNumbers(size + 1, result + '1', n)
+    printBinaryNumbers(size + 1, result + '0', n)
+n = 4
+printBinaryNumbers(0, '', n)
+
+output:
+1111
+1110
+1101
+1100
+1011
+1010
+1001
+1000
+0111
+0110
+0101
+0100
+0011
+0010
+0001
+0000
