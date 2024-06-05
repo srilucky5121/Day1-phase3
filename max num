@@ -1,0 +1,14 @@
+def findmax1(index,nums,n,result):
+    if index==n:
+        print("Max num is:", result)
+        return
+    if nums[index]>result:
+        result=nums[index]
+    findmax1(index+1,nums,n,result)
+
+nums=[12,32,11,10]
+result=findmax1(0,nums,len(nums),0)
+
+
+Output:
+Max num is :32
